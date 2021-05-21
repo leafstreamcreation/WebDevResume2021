@@ -4,3 +4,16 @@ html {
     background-color: aquamarine;
     border: 1px solid black;
 }
+
+body {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: darkgoldenrod;
+    width: 100%;
+}
