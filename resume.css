@@ -1,3 +1,6 @@
+/* the html is limited to US letter (8.5'X11') dimensions
+scaled to the width of the viewport */
+
 html {
     width: 100vw;
     height: 129.411765vw;
@@ -6,7 +9,10 @@ html {
 }
 
 body {
+    width: 100vw;
+    height: 129.411765vw;
     margin: 0;
+    padding: 0;
 }
 
 .header {
@@ -16,4 +22,38 @@ body {
     justify-content: space-evenly;
     background-color: darkgoldenrod;
     width: 100%;
+    height: 15%;
+    overflow-y: clip;
+}
+
+main {
+    width: 100%;
+    height: 85%;
+    margin: 0;
+    padding: 0;
+    overflow-y: clip;
+}
+
+section {
+    height: 20%;
+    overflow-y: clip;
+}
+
+.summary {
+}
+
+.technical-skills {
+    background-color: firebrick;
+}
+
+.projects {
+    background-color:lightsteelblue;
+}
+
+.experience {
+    background-color: lightcoral;
+}
+
+.education {
+    background-color: seagreen;
 }
