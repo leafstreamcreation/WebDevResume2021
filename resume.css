@@ -37,7 +37,7 @@ main {
 
 section {
     height: 20%;
-    overflow-y: clip;
+    overflow-y: scroll;
 }
 
 .summary {
