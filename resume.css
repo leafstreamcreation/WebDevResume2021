@@ -36,7 +36,7 @@ main {
 }
 
 section {
-    height: 20%;
+    height: 25%;
     overflow-y: scroll;
 }
 
@@ -45,10 +45,6 @@ section {
 
 .technical-skills {
     background-color: firebrick;
-}
-
-.projects {
-    background-color:lightsteelblue;
 }
 
 .experience {
