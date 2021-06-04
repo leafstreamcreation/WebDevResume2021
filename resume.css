@@ -1,6 +1,9 @@
 /* the html is limited to US letter (8.5'X11') dimensions
 scaled to the width of the viewport */
 
+/* Todo: media query so that fonts, margins,
+and formatting scale properly */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +12,7 @@ scaled to the width of the viewport */
 html {
     width: 100vw;
     height: 129.411765vw;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -30,12 +33,18 @@ body {
     color: white;
 }
 
+.title {
+    flex-basis: 50%;
+}
+
 .my-name {
-    font-size: 5em;
+    font-size: 5rem;
+    letter-spacing: 1rem;
 }
 
 .my-title {
-    font-size: 2.5em;
+    font-size: 2.5rem;
+    letter-spacing: 1rem;
 }
 
 .contact-box {
@@ -47,19 +56,15 @@ body {
 }
 
 .contact {
-    font-size: 1.3em;
-}
-
-main {
-    width: 100vw;
-    height: 85%;
-    overflow-y: clip;
-    display: flex;
-    flex-direction: row;
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
 }
 
 ul {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 a {
@@ -71,36 +76,92 @@ a {
     color: white;
 }
 
-.column {
-    height: 100%;
-    overflow-y: scroll;
-    overflow-x: clip;
-}
-
-.left {
-    flex-basis: 25%;
-}
-.right {
-    flex-basis: 75%;
-}
-
 .contact-icon {
     width: 40px;
     height: 40px;
 }
 
-.summary {
+main {
+    width: 100vw;
+    height: 85%;
+    overflow-y: clip;
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    height: 100%;
+    /* overflow-y: scroll;
+    overflow-x: clip; */
+    padding: 40px;
+}
+
+.left {
+    flex-basis: 30%;
+}
+.right {
+    flex-basis: 70%;
+}
+
+section > h3 {
+    font-size: 3rem;
+    letter-spacing: .5rem;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.5rem;
+    word-spacing: .3rem;
+    line-height: 200%;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+li {
+    font-size: 1.5rem;
+    word-spacing: .5rem;
+    margin: 10px 0;
+}
+
+section {
+    padding: 40px;
+}
+
+h5 {
+    font-size: 1.6rem;
 }
 
 .technical-skills {
-}
-
-.experience {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20%;
 }
 
 .education {
+    flex-basis: 80%;
 }
 
 .project {
+    margin-left: 20px;
+}
 
+.project > p {
+    line-height: 150%;
+}
+
+.school {
+    margin-top: 40px;
+}
+
+.position {
+    margin-top: 40px;
+}
+
+i {
+    font-size: 1.2rem;
+    word-spacing: .5rem;
 }
