@@ -30,6 +30,26 @@ body {
     color: white;
 }
 
+.my-name {
+    font-size: 5em;
+}
+
+.my-title {
+    font-size: 2.5em;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 75%;
+    justify-self: flex-end;
+}
+
+.contact {
+    font-size: 1.3em;
+}
+
 main {
     width: 100vw;
     height: 85%;
@@ -40,6 +60,15 @@ main {
 
 ul {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+.contact {
+    color: white;
 }
 
 .column {
@@ -53,6 +82,11 @@ ul {
 }
 .right {
     flex-basis: 75%;
+}
+
+.contact-icon {
+    width: 40px;
+    height: 40px;
 }
 
 .summary {
