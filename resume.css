@@ -4,6 +4,12 @@ scaled to the width of the viewport */
 /* Todo: media query so that fonts, margins,
 and formatting scale properly */
 
+
+/* default media; mobile first portrait (iphone XS max) */
+@media only screen and (min-width: 414px) and (max-width: 767px) and (orientation: portrait) {
+    
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +20,7 @@ html {
     height: 129.411765vw;
     /* border: 1px solid black; */
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
 
 body {
@@ -35,29 +42,31 @@ body {
 
 .title {
     flex-basis: 50%;
+    /* background-color: coral; */
 }
 
 .my-name {
-    font-size: 5rem;
-    letter-spacing: 1rem;
+    font-size: 1rem;
+    letter-spacing: .2rem;
 }
 
 .my-title {
-    font-size: 2.5rem;
-    letter-spacing: 1rem;
+    font-size: .5rem;
+    letter-spacing: .25rem;
 }
 
 .contact-box {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center; */
     height: 75%;
     justify-self: flex-end;
+    background-color: coral;
 }
 
 .contact {
-    font-size: 1.5rem;
-    letter-spacing: .2rem;
+    font-size: .3rem;
+    letter-spacing: 0rem;
 }
 
 ul {
@@ -91,16 +100,16 @@ main {
 
 .column {
     height: 100%;
-    /* overflow-y: scroll;
-    overflow-x: clip; */
+    overflow-y: clip;
+    /* overflow-x: clip; */
     padding: 40px;
 }
 
 .left {
-    flex-basis: 30%;
+    width: 30%;
 }
 .right {
-    flex-basis: 70%;
+    width: 70%;
 }
 
 section > h3 {
