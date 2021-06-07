@@ -56,9 +56,9 @@ body {
 }
 
 .contact-box {
-    /* display: flex;
+    display: flex;
     flex-direction: column;
-    justify-content: center; */
+    justify-content: center;
     height: 75%;
     justify-self: flex-end;
     background-color: coral;
