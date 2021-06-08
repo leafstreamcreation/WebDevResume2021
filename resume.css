@@ -111,7 +111,7 @@ main {
 section > h3 {
     font-size: .6rem;
     letter-spacing: 0rem;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
 }
 
 h4 {
@@ -171,7 +171,10 @@ h5 {
 i {
     font-size: .24rem;
     word-spacing: 0rem;
+    /* border: solid 1px black */
+}
+
+.position i {
     position: relative;
     top: -10px;
-    /* border: solid 1px black */
 }
