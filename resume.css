@@ -58,10 +58,18 @@ body {
 .contact-box {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     height: 75%;
+    width: max-content;
     justify-self: flex-end;
     background-color: coral;
+}
+
+.contact-box div {
+    height: 5px;
+}
+.contact-box a {
+    height: 5px;
 }
 
 .contact {
@@ -78,7 +86,8 @@ ul {
 
 a {
     text-decoration: none;
-    color: black
+    color: black;
+    width: 0px;
 }
 
 .contact {
