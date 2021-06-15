@@ -178,3 +178,9 @@ i {
     position: relative;
     top: -10px;
 }
+
+
+
+@media only print {
+    
+}
