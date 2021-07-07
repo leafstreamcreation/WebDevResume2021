@@ -147,6 +147,11 @@ h5 {
     flex-basis: 80%;
 }
 
+.project-header {
+    font-size: .5rem;
+    margin-left: 5px;
+}
+
 .project {
     margin-left: 5px;
 }
