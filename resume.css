@@ -147,12 +147,7 @@ h5 {
     flex-basis: 80%;
 }
 
-.project-header {
-    font-size: .5rem;
-    margin-left: 5px;
-}
-
-.project {
+.project > a, i {
     margin-left: 5px;
 }
 
@@ -161,12 +156,16 @@ h5 {
 }
 
 .school {
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .position {
     margin-top: 5px;
     /* border: solid 1px blue; */
+}
+
+.position > p, i {
+    margin-left: 5px;
 }
 
 i {
@@ -183,7 +182,11 @@ i {
 /* default medium; mobile first portrait (iPhone XS max) */
 @media only screen and (min-width: 414px) and (max-width: 767px) and (orientation: portrait) {
     html {
-        font-size: 16px;
+        font-size: 18px;
+    }
+
+    .offset-left {
+        margin-left: 5px;
     }
 }
 
