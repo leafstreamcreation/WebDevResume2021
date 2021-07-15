@@ -4,6 +4,9 @@ scaled to the width of the viewport */
 /* Todo: media query so that fonts, margins,
 and formatting scale properly */
 
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -21,6 +24,11 @@ body {
     height: 100%;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .header {
     display: flex;
     flex-direction: row;
@@ -35,16 +43,17 @@ body {
 
 .title {
     flex-basis: 50%;
+    /* background-color: coral; */
 }
 
 .my-name {
-    font-size: 5rem;
-    letter-spacing: 1rem;
+    font-size: 1rem;
+    letter-spacing: .2rem;
 }
 
 .my-title {
-    font-size: 2.5rem;
-    letter-spacing: 1rem;
+    font-size: .5rem;
+    letter-spacing: .25rem;
 }
 
 .contact-box {
@@ -52,12 +61,12 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     height: 75%;
-    justify-self: flex-end;
 }
 
 .contact {
-    font-size: 1.5rem;
-    letter-spacing: .2rem;
+    font-size: .3rem;
+    letter-spacing: .05rem;
+    color:white;
 }
 
 ul {
@@ -65,20 +74,7 @@ ul {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-}
-
-a {
-    text-decoration: none;
-    color: black
-}
-
-.contact {
-    color: white;
-}
-
-.contact-icon {
-    width: 40px;
-    height: 40px;
+    /* border: solid 1px red */
 }
 
 main {
@@ -91,48 +87,43 @@ main {
 
 .column {
     height: 100%;
-    /* overflow-y: scroll;
-    overflow-x: clip; */
-    padding: 40px;
+    overflow-y: clip;
+    /* overflow-x: clip; */
+    padding: 10px;
 }
 
 .left {
-    flex-basis: 30%;
+    width: 30%;
 }
 .right {
-    flex-basis: 70%;
+    width: 70%;
 }
 
 section > h3 {
-    font-size: 2.9rem;
-    letter-spacing: .5rem;
-    margin-bottom: 20px;
+    font-size: .6rem;
+    letter-spacing: 0rem;
 }
 
 h4 {
-    font-size: 2rem;
+    font-size: .4rem;
 }
 
 p {
-    font-size: 1.5rem;
-    word-spacing: .3rem;
+    font-size: .3rem;
+    word-spacing: 0rem;
     line-height: 200%;
     overflow-wrap: break-word;
     hyphens: auto;
 }
 
 li {
-    font-size: 1.5rem;
-    word-spacing: .5rem;
-    margin: 10px 0;
+    font-size: .3rem;
+    word-spacing: 0rem;
 }
 
-section {
-    padding: 40px;
-}
 
 h5 {
-    font-size: 1.6rem;
+    font-size: .32rem;
 }
 
 .technical-skills {
@@ -145,23 +136,118 @@ h5 {
     flex-basis: 80%;
 }
 
-.project {
-    margin-left: 20px;
-}
 
 .project > p {
     line-height: 150%;
 }
 
-.school {
-    margin-top: 40px;
-}
-
-.position {
-    margin-top: 40px;
-}
 
 i {
-    font-size: 1.2rem;
-    word-spacing: .5rem;
+    font-size: .24rem;
+    word-spacing: 0rem;
+    /* border: solid 1px black */
+}
+
+.position i {
+    position: relative;
+    top: -10px;
+}
+
+/* default medium; mobile first portrait (iPhone XS max) */
+@media only screen and (min-width: 414px) and (max-width: 767px) and (orientation: portrait) {
+    html {
+        font-size: 18px;
+    }
+
+
+    .contact-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    section {
+        padding: 5px;
+        /* border: solid 1px green; */
+    }
+
+    section > h3 {
+        margin-bottom: 7px;
+    }
+
+    li {
+        margin: 1px 0;
+    }
+
+    .offset-left {
+        margin-left: 5px;
+    }
+    
+    .project > a, i {
+        margin-left: 5px;
+    }
+
+    .school {
+        margin-top: 5px;
+    }
+    
+    .position {
+        margin-top: 5px;
+        /* border: solid 1px blue; */
+    }
+    
+    .position > p, i {
+        margin-left: 5px;
+    }
+}
+
+
+
+@media (min-width: 800px) {
+    html {
+        font-size: 42px;
+    }
+
+
+    .contact-icon {
+        /* width: 40px;
+        height: 40px; */
+    }
+    
+    section {
+        padding: 16px;
+        /* border: solid 1px green; */
+    }
+
+    section > h3 {
+        margin-bottom: 1px;
+    }
+
+    li {
+        margin: 2px 0;
+    }
+
+    .offset-left {
+        margin-left: 12px;
+    }
+
+    .project {
+        margin-top: 12px;
+    }
+    
+    .project > a, i {
+        margin-left: 12px;
+    }
+
+    .school {
+        margin-top: 12px;
+    }
+    
+    .position {
+        margin-top: 12px;
+        /* border: solid 1px blue; */
+    }
+    
+    .position > p, i {
+        margin-left: 12px;
+    }
 }
